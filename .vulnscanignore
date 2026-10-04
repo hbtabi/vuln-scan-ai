@@ -1,0 +1,4 @@
+# Paths excluded from `vuln-scan-ai scan .` (fnmatch patterns, relative to the repo root).
+# The demo generator and tests intentionally contain insecure patterns.
+vulnscan/demo.py
+tests/*
