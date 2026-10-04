@@ -1,0 +1,17 @@
+{
+  "_comment": "Small offline sample of well-known advisories so the tool works without network. NOT exhaustive - use --osv for a live lookup against osv.dev.",
+  "pypi": {
+    "pyyaml": [{"id": "CVE-2020-14343", "fixed": "5.4", "severity": "critical", "summary": "Arbitrary code execution via full_load / FullLoader"}],
+    "requests": [{"id": "CVE-2018-18074", "fixed": "2.20.0", "severity": "high", "summary": "Authorization header leaked on HTTPS->HTTP redirect"}],
+    "urllib3": [{"id": "CVE-2019-11324", "fixed": "1.24.2", "severity": "high", "summary": "Improper certificate validation when custom CA certs are used"}],
+    "jinja2": [{"id": "CVE-2019-10906", "fixed": "2.10.1", "severity": "high", "summary": "Sandbox escape via str.format_map"}],
+    "flask": [{"id": "CVE-2023-30861", "ranges": [["0", "2.2.5"], ["2.3.0", "2.3.2"]], "severity": "high", "summary": "Session cookie may be cached and shared by proxies"}],
+    "pillow": [{"id": "CVE-2023-50447", "fixed": "10.2.0", "severity": "high", "summary": "Arbitrary code execution via PIL.ImageMath.eval"}]
+  },
+  "npm": {
+    "lodash": [{"id": "CVE-2021-23337", "fixed": "4.17.21", "severity": "high", "summary": "Command injection via template()"}],
+    "minimist": [{"id": "CVE-2021-44906", "fixed": "1.2.6", "severity": "critical", "summary": "Prototype pollution"}],
+    "axios": [{"id": "CVE-2020-28168", "fixed": "0.21.1", "severity": "medium", "summary": "SSRF via redirect to a different host"}],
+    "node-fetch": [{"id": "CVE-2022-0235", "fixed": "2.6.7", "severity": "high", "summary": "Cookie/Authorization headers forwarded to third-party hosts on redirect"}]
+  }
+}
